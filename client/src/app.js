@@ -1,7 +1,7 @@
 var QuoteView = require('./views/quoteView');
 
 var app = function(){
-  var url = 'http://localhost:3000/quotes';
+  var url = 'http://localhost:3000/scales';
   makeRequest(url, requestComplete);
 }
 

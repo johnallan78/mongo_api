@@ -1,16 +1,16 @@
-var QuoteView = function(quotes){
-  this.render(quotes);
+var QuoteView = function(scale){
+  this.render(scale);
 }
 
 QuoteView.prototype = {
-  render: function(quotes){
+  render: function(scale){
     
-    console.log(quotes);
-    quotes.forEach( function(quote){
+    console.log(scale);
+    scale.forEach( function(scale){
       var li = document.createElement('li');
       var text = document.createElement('p');
-      var ul = document.getElementById('quotes');
-      text.innerText = quote.name + ": " + '"' + quote.quote + '"';
+      var ul = document.getElementById('scales');
+      text.innerText = scale.scale + ": " + '"' + scale.notes + '"';
       li.appendChild(text);
       ul.appendChild(li);
     })
